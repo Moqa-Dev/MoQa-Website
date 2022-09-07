@@ -105,7 +105,7 @@ h1.name {
 }
 
 .job-title {
-	vertical-align: top;
+	vertical-align: bottom;
 	background-color: #D9E7F8;
 	color: #4A90E2;
 	font-weight: 600;
@@ -195,14 +195,15 @@ h1.name {
 
 .card {
 	width: 47.9%;
-	height: 200px;
+	height: auto;
 	background-color: #EEF0F7;
 	display: inline-block;
 	margin: 7px 5px;
 	vertical-align: top;
 	border-radius: 10px;
 	text-align: center;
-	padding-top: 50px
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .card-active , .card:hover{
@@ -366,6 +367,33 @@ li .description {
 
 
 
+.timeline{
+	border: none;
+	background-color: rgba(0,0,0,0);
+}
+
+.timeline li{
+	margin-top: 70px;
+	height: auto;
+}
+
+
+
+.iconImage{
+	width:70px;
+	height:auto;
+}
+
+.contributorImage{
+	width:100px;
+	height:auto;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+	border-radius: 50%;
+	border: 3px solid #5B6A9A;
+}
+
 /* Media queries*/
 
 @media(max-width: 1024px){
@@ -374,17 +402,51 @@ li .description {
 		margin: 0px auto;
 	}
 	.cards {
-		margin-top: 250px;
+		margin-top: 20px;
+	}
+
+	.card h2 {
+		font-size: 70px;
+	}
+	
+	.timeline{
+		border: none;
+		background-color: rgba(0,0,0,0);
+	}
+
+	.timeline li{
+		margin-top: 70px;
+		height: auto;
 	}
 }
 
 @media(max-width: 768px){
+	h1.name {
+		font-size: 50px;
+	}
+	.job-title {
+		vertical-align: bottom;
+		background-color: #D9E7F8;
+		color: #4A90E2;
+		font-weight: 400;
+		margin-top: 5px;
+		margin-left: 20px;
+		border-radius: 5px;
+		display: inline-block;
+		padding: 10px 20px;
+	}
+
+	.iconImage{
+		width:50px;
+		height:auto;
+	}
+
 	.container {
 		padding: 15px;
 		margin: 0px auto;
 	}
 	.cards {
-		margin-top: 320px;
+		margin-top: 20px;
 	}
 
 	.card {
@@ -408,14 +470,14 @@ li .description {
 
 	.timeline li{
 		margin-top: 70px;
-		height: 150px;
+		height: auto;
 	}
 }
 
 
 @media(max-width: 425px) {
 	h1.name {
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	.card , .sections {
@@ -427,14 +489,23 @@ li .description {
 
 	.timeline{
 		display: none;
-		}
+	}
+	
+	.iconImage{
+		width:30px;
+		height:auto;
+	}
 
 	.job-title {
-		position: absolute;
-		font-size: 15px;
-		top: -40px;
-		right: 20px;
-		padding: 10px
+		vertical-align: bottom;
+		background-color: #D9E7F8;
+		color: #4A90E2;
+		font-weight: 500;
+		margin-top: 5px;
+		margin-left: 10px;
+		border-radius: 5px;
+		display: inline-block;
+		padding: 8px 8px;
 	}
 
 	.lead {
@@ -453,18 +524,3 @@ li .description {
 
 
 /* End of all :P*/
-
-.iconImage{
-	width:70px;
-	height:auto;
-}
-
-.contributorImage{
-	width:100px;
-	height:auto;
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 15px;
-	border-radius: 50%;
-	border: 3px solid #5B6A9A;
-}
